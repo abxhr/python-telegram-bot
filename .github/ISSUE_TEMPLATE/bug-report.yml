@@ -44,16 +44,25 @@ body:
     validations:
       required: false
       
-  - type: dropdown
-    id: version
+  - type: markdown
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
+      value: "### Configuration"
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating System
+    validations: 
+      required: false
+
+  - type: textarea
+    id: versions
+    attributes:
+      label: Version of Python, python-telegram-bot & dependencies
+      description: This will be automatically formatted into code, so no need for backticks.
+      render: shell
+    validations: 
+      required: false
       
   - type: dropdown
     id: browsers
