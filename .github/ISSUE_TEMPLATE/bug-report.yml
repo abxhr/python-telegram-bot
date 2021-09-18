@@ -16,15 +16,6 @@ body:
         Please note, we only support the latest version of python-telegram-bot and
         master branch. Please make sure to upgrade & recreate the issue on the latest
         version prior to opening an issue.
-        
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
       
   - type: textarea
     id: steps-to-reproduce
@@ -36,6 +27,22 @@ body:
         2.
 
         3.
+        
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Expected behaviour
+      description: Tell us what should happen
+    validations:
+      required: false
+      
+  - type: textarea
+    id: actual-behaviour
+    attributes:
+      label: Actual behaviour
+      description: Tell us what happens instead
+    validations:
+      required: false
       
   - type: dropdown
     id: version
