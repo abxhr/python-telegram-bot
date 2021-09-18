@@ -2,7 +2,7 @@ name: Bug report
 description: Create a report to help us improve
 title: "[BUG]"
 labels: ["bug :bug:"]
-assignees:
+assignees: ""
 
 body:
   - type: markdown
@@ -50,8 +50,7 @@ body:
 
   - type: markdown
     attributes:
-      value: |
-      ### Configuration
+      value: "### Configuration"
 
   - type: input
     id: operating-system
